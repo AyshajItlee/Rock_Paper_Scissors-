@@ -1,0 +1,124 @@
+.game {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 16px 48px;
+  text-align: center;
+}
+
+.arena {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin: 28px 0 20px;
+  flex-wrap: wrap;
+}
+
+.versus {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+/* The square box with curved edges and a black border */
+.image-box {
+  width: 220px;
+  height: 220px;
+  border: 4px solid #000;
+  border-radius: 24px;
+  background: #fff;
+  overflow: hidden; /* keeps the image inside the curved corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* shows the whole picture; use "cover" to fill the box instead */
+}
+
+.placeholder {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #999;
+}
+
+.caption {
+  margin: 10px 0 0;
+  font-size: 1.1rem;
+}
+
+.message {
+  font-size: 1.6rem;
+  font-weight: 700;
+  min-height: 2.2rem;
+  margin: 8px 0 16px;
+}
+
+.message.win {
+  color: #1a7f37;
+}
+
+.message.loss {
+  color: #c62828;
+}
+
+.message.tie {
+  color: #555;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.buttons button,
+.reset {
+  padding: 10px 22px;
+  font-size: 1rem;
+  border: 2px solid #000;
+  border-radius: 12px;
+  background: #f0f0f0;
+  color: #000;
+  cursor: pointer;
+}
+
+.buttons button:hover,
+.reset:hover {
+  background: #e0e0e0;
+}
+
+.buttons button:focus-visible,
+.reset:focus-visible {
+  outline: 3px solid #1a5fd0;
+  outline-offset: 2px;
+}
+
+.buttons button.selected {
+  background: #dbe8ff;
+  border-color: #1a5fd0;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 22px 0 16px;
+}
+
+.stats span {
+  padding: 6px 14px;
+  border: 1px solid #999;
+  border-radius: 999px;
+  background: #f7f7f7;
+  color: #000;
+}
+
+.reset {
+  font-size: 0.9rem;
+  padding: 6px 16px;
+}
