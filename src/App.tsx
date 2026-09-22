@@ -45,7 +45,7 @@ function getRandomChoice(): Choice {
   return CHOICES[index];
 }
 
-// One square, rounded, black-bordered box that holds a choice image
+
 function ChoiceBox({ title, choice }: { title: string; choice: Choice | null }) {
   return (
     <div className="player">
